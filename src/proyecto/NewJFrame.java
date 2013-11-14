@@ -3,32 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.JPanel;
+package proyecto;
 
 /**
  *
  * @author Hogar
  */
-public class JPanelConFondo extends JPanel {
-
-        private Image imagen;
-
-    //...
-        //@Override
-        public void paint(Graphics g) {
-            g.drawImage(imagen, 0, 0, getWidth(), getHeight(),
-                    this);
-
-            setOpaque(false);
-            super.paint(g);
-        }
-
-    //...
-    }
 public class NewJFrame extends javax.swing.JFrame {
 
     /**
@@ -39,7 +20,6 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,38 +29,43 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        jcMousePanel1 = new jcMousePanel.jcMousePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Proyecto");
+        setTitle("Ruleta");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 353, Short.MAX_VALUE)
+        jcMousePanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto/Casino.jpg"))); // NOI18N
+        jcMousePanel1.setVisibleLogo(false);
+
+        javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
+        jcMousePanel1.setLayout(jcMousePanel1Layout);
+        jcMousePanel1Layout.setHorizontalGroup(
+            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 645, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 187, Short.MAX_VALUE)
+        jcMousePanel1Layout.setVerticalGroup(
+            jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 249, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(70, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 645, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        getAccessibleContext().setAccessibleName("Ruleta");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -121,6 +106,6 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
+    private jcMousePanel.jcMousePanel jcMousePanel1;
     // End of variables declaration//GEN-END:variables
 }
