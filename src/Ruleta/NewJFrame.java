@@ -39,6 +39,7 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ruleta");
         setResizable(false);
+        setType(java.awt.Window.Type.POPUP);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha1.png"))); // NOI18N
         jLabel2.setName("L1"); // NOI18N
