@@ -30,6 +30,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jcMousePanel2 = new jcMousePanel.jcMousePanel();
+        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -45,15 +46,23 @@ public class NewJFrame extends javax.swing.JFrame {
         jcMousePanel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/Casino.jpg"))); // NOI18N
         jcMousePanel2.setVisibleLogo(false);
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
         jcMousePanel2.setLayout(jcMousePanel2Layout);
         jcMousePanel2Layout.setHorizontalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel2Layout.createSequentialGroup()
+                .addContainerGap(490, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(126, 126, 126))
         );
         jcMousePanel2Layout.setVerticalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGroup(jcMousePanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(213, Short.MAX_VALUE))
         );
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha1.png"))); // NOI18N
@@ -150,6 +159,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel1;
     private jcMousePanel.jcMousePanel jcMousePanel2;
     // End of variables declaration//GEN-END:variables
 }
