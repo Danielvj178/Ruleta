@@ -4,10 +4,13 @@
  * and open the template in the editor.
  */
 
-package ruleta;
+package Ruleta;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.JFrame;
 
 /**
  *
@@ -19,17 +22,18 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
      * Creates new form NewJFrame
      */
     int Val;
-    public NewJFrame() {
+    public NewJFrame() {    
         initComponents();
+        Fondo img = new Fondo();
+        add(img);
+        this.setVisible(true);
         //jButton1.setActionCommand("Bt1");  Esto se utiliza para dar nombre al boton y asi hacer una condicion, hasta el momento no se necesita
         jButton1.addActionListener(this);
         jButton2.addActionListener(this);
         jButton3.addActionListener(this);
         jButton4.addActionListener(this);
         jButton5.addActionListener(this);
-    }
-
-    
+    } 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -50,7 +54,6 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ruleta");
-        setBackground(new java.awt.Color(255, 51, 51));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
@@ -59,26 +62,24 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jLabel2.setText("jLabel2");
-
         javax.swing.GroupLayout jcMousePanel2Layout = new javax.swing.GroupLayout(jcMousePanel2);
         jcMousePanel2.setLayout(jcMousePanel2Layout);
         jcMousePanel2Layout.setHorizontalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel2Layout.createSequentialGroup()
                 .addContainerGap(476, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addGap(91, 91, 91))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(85, 85, 85))
         );
         jcMousePanel2Layout.setVerticalGroup(
             jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jcMousePanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE))
+                .addGroup(jcMousePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(182, Short.MAX_VALUE))
         );
 
@@ -164,6 +165,26 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
         // TODO add your handling code here:
         Val = 1;
         System.out.println("Se esta pulsando el boton 1: "+Val);
+        jLabel1.addMouseListener(new MouseListener() {
+            int cont = 0;
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                cont = cont+1;
+                System.out.println("Ha sido clickeado: "+cont);
+            }
+            @Override
+            public void mousePressed(MouseEvent e){ }
+
+            @Override
+            public void mouseReleased(MouseEvent e) { }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {   }
+
+            @Override
+            public void mouseExited(MouseEvent e) {  }
+        });
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -218,8 +239,9 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
         //</editor-fold>
 
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+            public void run() { 
                 new NewJFrame().setVisible(true);
             }
         });
