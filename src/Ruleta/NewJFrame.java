@@ -21,7 +21,7 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
     /**
      * Creates new form NewJFrame
      */
-    int Val;
+    int Val,cont = 0;
     public NewJFrame() {    
         initComponents();
         Fondo img = new Fondo();
@@ -166,8 +166,6 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener{
         Val = 1;
         System.out.println("Se esta pulsando el boton 1: "+Val);
         jLabel1.addMouseListener(new MouseListener() {
-            int cont = 0;
-
             @Override
             public void mouseClicked(MouseEvent e) {
                 cont = cont+1;
