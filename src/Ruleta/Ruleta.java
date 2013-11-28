@@ -299,8 +299,10 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             }
         });
         N30.setLayout(null);
+
+        jLabel30.setText("Jjjjsjs");
         N30.add(jLabel30);
-        jLabel30.setBounds(10, 20, 30, 20);
+        jLabel30.setBounds(10, 30, 27, 10);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
