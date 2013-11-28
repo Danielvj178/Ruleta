@@ -99,7 +99,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jPanel46 = new javax.swing.JPanel();
         jPanel50 = new javax.swing.JPanel();
         N15 = new javax.swing.JPanel();
-        javax.swing.JLabel jLabel15 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jPanel52 = new javax.swing.JPanel();
         jPanel53 = new javax.swing.JPanel();
         jPanel54 = new javax.swing.JPanel();
@@ -235,7 +235,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jcMousePanel1.setVisibleLogo(false);
 
         Moneda1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha1.png"))); // NOI18N
-        Moneda1.setBorder(new javax.swing.border.SoftBevelBorder(1));
+        Moneda1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         Moneda1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda1ActionPerformed(evt);
@@ -243,7 +243,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         Moneda5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha2.png"))); // NOI18N
-        Moneda5.setBorder(new javax.swing.border.SoftBevelBorder(1));
+        Moneda5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         Moneda5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda5ActionPerformed(evt);
@@ -251,7 +251,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         Moneda25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha25.png"))); // NOI18N
-        Moneda25.setBorder(new javax.swing.border.SoftBevelBorder(1));
+        Moneda25.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         Moneda25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda25ActionPerformed(evt);
@@ -259,7 +259,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         Moneda50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha50.png"))); // NOI18N
-        Moneda50.setBorder(new javax.swing.border.SoftBevelBorder(1));
+        Moneda50.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         Moneda50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda50ActionPerformed(evt);
@@ -267,7 +267,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         jButton100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha100.png"))); // NOI18N
-        jButton100.setBorder(new javax.swing.border.SoftBevelBorder(1));
+        jButton100.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jButton100.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton100ActionPerformed(evt);
@@ -446,6 +446,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 70, Short.MAX_VALUE)
         );
 
+        N7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N7MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N7Layout = new javax.swing.GroupLayout(N7);
         N7.setLayout(N7Layout);
         N7Layout.setHorizontalGroup(
@@ -511,6 +517,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        N13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N13MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N13Layout = new javax.swing.GroupLayout(N13);
         N13.setLayout(N13Layout);
         N13Layout.setHorizontalGroup(
@@ -527,9 +539,9 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 62, Short.MAX_VALUE)
             .addGroup(N13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N13Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 26, Short.MAX_VALUE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 26, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
@@ -597,6 +609,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 69, Short.MAX_VALUE)
         );
+
+        N3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N3Layout = new javax.swing.GroupLayout(N3);
         N3.setLayout(N3Layout);
@@ -674,6 +692,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N9MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N9Layout = new javax.swing.GroupLayout(N9);
         N9.setLayout(N9Layout);
         N9Layout.setHorizontalGroup(
@@ -750,16 +774,22 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N15MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N15Layout = new javax.swing.GroupLayout(N15);
         N15.setLayout(N15Layout);
         N15Layout.setHorizontalGroup(
             N15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(N15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N15Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 5, Short.MAX_VALUE)
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 5, Short.MAX_VALUE)))
         );
         N15Layout.setVerticalGroup(
             N15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -825,6 +855,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 69, Short.MAX_VALUE)
         );
+
+        N21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N21MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N21Layout = new javax.swing.GroupLayout(N21);
         N21.setLayout(N21Layout);
@@ -902,6 +938,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 59, Short.MAX_VALUE)
         );
 
+        N19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N19MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N19Layout = new javax.swing.GroupLayout(N19);
         N19.setLayout(N19Layout);
         N19Layout.setHorizontalGroup(
@@ -978,6 +1020,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N27MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N27Layout = new javax.swing.GroupLayout(N27);
         N27.setLayout(N27Layout);
         N27Layout.setHorizontalGroup(
@@ -1053,6 +1101,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel86Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        N25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N25MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N25Layout = new javax.swing.GroupLayout(N25);
         N25.setLayout(N25Layout);
@@ -1152,6 +1206,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        N31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N31MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N31Layout = new javax.swing.GroupLayout(N31);
         N31.setLayout(N31Layout);
         N31Layout.setHorizontalGroup(
@@ -1194,6 +1254,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel106Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        N36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N36MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N36Layout = new javax.swing.GroupLayout(N36);
         N36.setLayout(N36Layout);
@@ -1249,6 +1315,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        N28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N28MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N28Layout = new javax.swing.GroupLayout(N28);
         N28.setLayout(N28Layout);
         N28Layout.setHorizontalGroup(
@@ -1269,6 +1341,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N22MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N22Layout = new javax.swing.GroupLayout(N22);
         N22.setLayout(N22Layout);
@@ -1291,6 +1369,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N10MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N10Layout = new javax.swing.GroupLayout(N10);
         N10.setLayout(N10Layout);
         N10Layout.setHorizontalGroup(
@@ -1311,6 +1395,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N4MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N4Layout = new javax.swing.GroupLayout(N4);
         N4.setLayout(N4Layout);
@@ -1333,6 +1423,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N6MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N6Layout = new javax.swing.GroupLayout(N6);
         N6.setLayout(N6Layout);
         N6Layout.setHorizontalGroup(
@@ -1354,6 +1450,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N16MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N16Layout = new javax.swing.GroupLayout(N16);
         N16.setLayout(N16Layout);
         N16Layout.setHorizontalGroup(
@@ -1370,10 +1472,16 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 62, Short.MAX_VALUE)
             .addGroup(N16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N16Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 26, Short.MAX_VALUE)
                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 26, Short.MAX_VALUE)))
         );
+
+        N18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N18MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N18Layout = new javax.swing.GroupLayout(N18);
         N18.setLayout(N18Layout);
@@ -1396,6 +1504,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N12MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N12Layout = new javax.swing.GroupLayout(N12);
         N12.setLayout(N12Layout);
         N12Layout.setHorizontalGroup(
@@ -1416,6 +1530,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N33MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N33Layout = new javax.swing.GroupLayout(N33);
         N33.setLayout(N33Layout);
@@ -1438,6 +1558,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N24MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N24Layout = new javax.swing.GroupLayout(N24);
         N24.setLayout(N24Layout);
         N24Layout.setHorizontalGroup(
@@ -1458,6 +1584,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N32MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N32Layout = new javax.swing.GroupLayout(N32);
         N32.setLayout(N32Layout);
@@ -1480,6 +1612,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N14MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N14Layout = new javax.swing.GroupLayout(N14);
         N14.setLayout(N14Layout);
         N14Layout.setHorizontalGroup(
@@ -1500,6 +1638,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N11MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N11Layout = new javax.swing.GroupLayout(N11);
         N11.setLayout(N11Layout);
@@ -1522,6 +1666,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N2MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N2Layout = new javax.swing.GroupLayout(N2);
         N2.setLayout(N2Layout);
         N2Layout.setHorizontalGroup(
@@ -1542,6 +1692,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N20MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N20Layout = new javax.swing.GroupLayout(N20);
         N20.setLayout(N20Layout);
@@ -1564,6 +1720,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N26MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N26Layout = new javax.swing.GroupLayout(N26);
         N26.setLayout(N26Layout);
         N26Layout.setHorizontalGroup(
@@ -1584,6 +1746,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
+
+        N23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N23MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N23Layout = new javax.swing.GroupLayout(N23);
         N23.setLayout(N23Layout);
@@ -1606,6 +1774,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N17MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N17Layout = new javax.swing.GroupLayout(N17);
         N17.setLayout(N17Layout);
         N17Layout.setHorizontalGroup(
@@ -1626,6 +1800,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 18, Short.MAX_VALUE)))
         );
+
+        N29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N29MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N29Layout = new javax.swing.GroupLayout(N29);
         N29.setLayout(N29Layout);
@@ -1648,6 +1828,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N8MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N8Layout = new javax.swing.GroupLayout(N8);
         N8.setLayout(N8Layout);
         N8Layout.setHorizontalGroup(
@@ -1668,6 +1854,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N35MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N35Layout = new javax.swing.GroupLayout(N35);
         N35.setLayout(N35Layout);
@@ -1711,6 +1903,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addContainerGap(17, Short.MAX_VALUE)))
         );
 
+        N5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N5MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout N5Layout = new javax.swing.GroupLayout(N5);
         N5.setLayout(N5Layout);
         N5Layout.setHorizontalGroup(
@@ -1731,6 +1929,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        N34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N34MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N34Layout = new javax.swing.GroupLayout(N34);
         N34.setLayout(N34Layout);
@@ -2087,86 +2291,83 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGroup(TableroLayout.createSequentialGroup()
                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(TableroLayout.createSequentialGroup()
-                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(TableroLayout.createSequentialGroup()
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(N9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(N9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(N12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(N15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TableroLayout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(N14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(16, 16, 16))
+                                        .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(N12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(N15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TableroLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(N14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(16, 16, 16))
+                            .addGroup(TableroLayout.createSequentialGroup()
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(TableroLayout.createSequentialGroup()
+                                                .addGap(4, 4, 4)
+                                                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGroup(TableroLayout.createSequentialGroup()
-                                                        .addGap(4, 4, 4)
-                                                        .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, TableroLayout.createSequentialGroup()
-                                                        .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(TableroLayout.createSequentialGroup()
-                                                        .addComponent(N7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(N8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(17, 17, 17)))
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addGap(48, 48, 48)
-                                                .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, TableroLayout.createSequentialGroup()
+                                                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(N11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(N10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(TableroLayout.createSequentialGroup()
+                                                .addComponent(N7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(N8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(17, 17, 17)))
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addGap(48, 48, 48)
+                                        .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, TableroLayout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(N13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addGap(0, 0, 0))
+                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(N11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(N10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addComponent(N13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(TableroLayout.createSequentialGroup()
                                 .addGap(19, 19, 19)
                                 .addComponent(jPanel140, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2385,8 +2586,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(N13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(N16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(N13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addGroup(TableroLayout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -2398,8 +2598,10 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(N16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(jPanel70, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                     .addComponent(N19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addComponent(N22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(TableroLayout.createSequentialGroup()
@@ -2492,10 +2694,9 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                             .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(TableroLayout.createSequentialGroup()
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(N15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(N15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2737,6 +2938,166 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     jplata.setText(Integer.toString(plata));
                 }
                 break;
+            case 5:
+                if (Integer.parseInt(jLabel5.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel5.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 6:
+                if (Integer.parseInt(jLabel6.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel6.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 7:
+                if (Integer.parseInt(jLabel7.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel7.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 8:
+                if (Integer.parseInt(jLabel8.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel8.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 9:
+                if (Integer.parseInt(jLabel9.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel9.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 10:
+                if (Integer.parseInt(jLabel10.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel10.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 11:
+                if (Integer.parseInt(jLabel11.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel11.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 12:
+                if (Integer.parseInt(jLabel12.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel12.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 13:
+                if (Integer.parseInt(jLabel13.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel13.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 14:
+                if (Integer.parseInt(jLabel14.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel14.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 15:
+                if (Integer.parseInt(jLabel15.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel15.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 16:
+                if (Integer.parseInt(jLabel16.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel16.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 17:
+                if (Integer.parseInt(jLabel17.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel17.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 18:
+                if (Integer.parseInt(jLabel18.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel18.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 19:
+                if (Integer.parseInt(jLabel19.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel19.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 20:
+                if (Integer.parseInt(jLabel20.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel20.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 21:
+                if (Integer.parseInt(jLabel21.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel21.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 22:
+                if (Integer.parseInt(jLabel22.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel22.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 23:
+                if (Integer.parseInt(jLabel23.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel23.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 24:
+                if (Integer.parseInt(jLabel24.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel24.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 25:
+                if (Integer.parseInt(jLabel25.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel25.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 26:
+                if (Integer.parseInt(jLabel26.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel26.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 27:
+                if (Integer.parseInt(jLabel27.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel27.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 28:
+                if (Integer.parseInt(jLabel28.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel28.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 29:
+                if (Integer.parseInt(jLabel29.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel29.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 30:
+                if (Integer.parseInt(jLabel30.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel30.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 31:
+                if (Integer.parseInt(jLabel31.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel31.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 32:
+                if (Integer.parseInt(jLabel32.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel32.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 33:
+                if (Integer.parseInt(jLabel33.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel33.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 34:
+                if (Integer.parseInt(jLabel34.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel34.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 35:
+                if (Integer.parseInt(jLabel35.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel35.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;
+            case 36:
+                if (Integer.parseInt(jLabel36.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel36.getText());
+                    jplata.setText(Integer.toString(plata));
+                }break;  
         }
         //Milisegundos (segundos*1000) luego de los cuales ejecutar el código
         int milisegundos = 0;
@@ -2782,8 +3143,283 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void N1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N1MouseClicked
         // TODO add your handling code here:
-        v1.setLabel(Val, jLabel30);
+        v1.setLabel(Val, jLabel1);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
     }//GEN-LAST:event_N1MouseClicked
+
+    private void N2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N2MouseClicked
+        // TODO add your handling code here:
+        v2.setLabel(Val, jLabel2);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N2MouseClicked
+
+    private void N3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N3MouseClicked
+        // TODO add your handling code here:
+        v3.setLabel(Val, jLabel3);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N3MouseClicked
+
+    private void N4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N4MouseClicked
+        // TODO add your handling code here:
+        v4.setLabel(Val, jLabel4);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N4MouseClicked
+
+    private void N5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N5MouseClicked
+        // TODO add your handling code here:
+        v5.setLabel(Val, jLabel5);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N5MouseClicked
+
+    private void N6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N6MouseClicked
+        // TODO add your handling code here:
+        v6.setLabel(Val, jLabel6);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N6MouseClicked
+
+    private void N7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N7MouseClicked
+        // TODO add your handling code here:
+        v7.setLabel(Val, jLabel7);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N7MouseClicked
+
+    private void N8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N8MouseClicked
+        // TODO add your handling code here:
+        v8.setLabel(Val, jLabel8);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N8MouseClicked
+
+    private void N9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N9MouseClicked
+        // TODO add your handling code here:
+        v9.setLabel(Val, jLabel9);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N9MouseClicked
+
+    private void N10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N10MouseClicked
+        // TODO add your handling code here:
+        v10.setLabel(Val, jLabel10);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N10MouseClicked
+
+    private void N11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N11MouseClicked
+        // TODO add your handling code here:
+        v11.setLabel(Val, jLabel11);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N11MouseClicked
+
+    private void N12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N12MouseClicked
+        // TODO add your handling code here:
+        v12.setLabel(Val, jLabel12);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N12MouseClicked
+
+    private void N13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N13MouseClicked
+        // TODO add your handling code here:
+        v13.setLabel(Val, jLabel13);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N13MouseClicked
+
+    private void N14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N14MouseClicked
+        // TODO add your handling code here:
+        v14.setLabel(Val, jLabel14);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N14MouseClicked
+
+    private void N15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N15MouseClicked
+        // TODO add your handling code here:
+        v15.setLabel(Val, jLabel15);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N15MouseClicked
+
+    private void N16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N16MouseClicked
+        // TODO add your handling code here:
+        v16.setLabel(Val, jLabel16);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N16MouseClicked
+
+    private void N17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N17MouseClicked
+        // TODO add your handling code here:
+        v17.setLabel(Val, jLabel17);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N17MouseClicked
+
+    private void N18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N18MouseClicked
+        // TODO add your handling code here:
+        v18.setLabel(Val, jLabel18);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N18MouseClicked
+
+    private void N19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N19MouseClicked
+        // TODO add your handling code here:
+        v19.setLabel(Val, jLabel19);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N19MouseClicked
+
+    private void N20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N20MouseClicked
+        // TODO add your handling code here:
+        v20.setLabel(Val, jLabel20);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N20MouseClicked
+
+    private void N21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N21MouseClicked
+        // TODO add your handling code here:
+        v21.setLabel(Val, jLabel21);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N21MouseClicked
+
+    private void N22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N22MouseClicked
+        // TODO add your handling code here:
+        v22.setLabel(Val, jLabel22);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N22MouseClicked
+
+    private void N23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N23MouseClicked
+        // TODO add your handling code here:
+        v23.setLabel(Val, jLabel23);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N23MouseClicked
+
+    private void N24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N24MouseClicked
+        // TODO add your handling code here:
+        v24.setLabel(Val, jLabel24);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N24MouseClicked
+
+    private void N25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N25MouseClicked
+        // TODO add your handling code here:
+        v25.setLabel(Val, jLabel25);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N25MouseClicked
+
+    private void N26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N26MouseClicked
+        // TODO add your handling code here:
+        v26.setLabel(Val, jLabel26);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N26MouseClicked
+
+    private void N27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N27MouseClicked
+        // TODO add your handling code here:
+        v27.setLabel(Val, jLabel27);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N27MouseClicked
+
+    private void N28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N28MouseClicked
+        // TODO add your handling code here
+        v28.setLabel(Val, jLabel28);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N28MouseClicked
+
+    private void N29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N29MouseClicked
+        // TODO add your handling code here:
+        v29.setLabel(Val, jLabel29);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N29MouseClicked
+
+    private void N31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N31MouseClicked
+        // TODO add your handling code here:
+        v31.setLabel(Val, jLabel31);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N31MouseClicked
+
+    private void N32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N32MouseClicked
+        // TODO add your handling code here:
+        v32.setLabel(Val, jLabel32);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N32MouseClicked
+
+    private void N33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N33MouseClicked
+        // TODO add your handling code here:
+        v33.setLabel(Val, jLabel33);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N33MouseClicked
+
+    private void N34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N34MouseClicked
+        // TODO add your handling code here:
+        v34.setLabel(Val, jLabel34);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N34MouseClicked
+
+    private void N35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N35MouseClicked
+        // TODO add your handling code here:
+        v35.setLabel(Val, jLabel35);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N35MouseClicked
+
+    private void N36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N36MouseClicked
+        // TODO add your handling code here:
+        v36.setLabel(Val, jLabel36);
+        plata = plata - Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
+    }//GEN-LAST:event_N36MouseClicked
 
     private int numero_aleatorio(int max, int min) {
         return min + (int) (Math.random() * ((max - min) + 1));
@@ -2889,6 +3525,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel13a22;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
