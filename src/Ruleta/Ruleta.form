@@ -263,6 +263,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Ruleta/Imagenes/Casino.jpg"/>
             </Property>
+            <Property name="opaque" type="boolean" value="false"/>
             <Property name="visibleLogo" type="boolean" value="false"/>
           </Properties>
 
@@ -308,7 +309,7 @@
                                                       <Component id="N4" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="2" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -555,7 +556,7 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                               <Component id="N23" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="15" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="103" groupAlignment="1" attributes="0">
@@ -598,23 +599,24 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="jPanel111" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Group type="102" alignment="1" attributes="0">
+                                                  <Group type="102" attributes="0">
                                                       <Component id="N33" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jPanel110" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <Component id="jPanel111" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                   <Group type="102" attributes="0">
-                                                      <Component id="jPanel112" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="N36" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Component id="jPanel112" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -965,22 +967,21 @@
                                               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="1" attributes="0">
-                                                          <Component id="N33" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jPanel110" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="N36" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <Component id="Jpanel2to1_3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="Jpanel2to1_3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="Jpanel2to1_2" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="N33" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jPanel110" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="N36" alignment="1" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jPanel112" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jPanel111" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="Jpanel2to1_2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jPanel112" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jPanel111" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1009,6 +1010,9 @@
           </Layout>
           <SubComponents>
             <Container class="javax.swing.JPanel" name="jPanel3">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel3MouseClicked"/>
               </Events>
@@ -1027,6 +1031,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel2">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1049,6 +1056,7 @@
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[32800, 32767]"/>
                 </Property>
+                <Property name="opaque" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N30MouseClicked"/>
@@ -1068,6 +1076,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel4">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1083,6 +1094,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel6">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1098,6 +1112,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N1">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N1MouseClicked"/>
               </Events>
@@ -1134,6 +1151,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel10">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1149,6 +1169,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel11">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1164,6 +1187,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel12">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1179,6 +1205,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel16">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1194,6 +1223,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N7">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N7MouseClicked"/>
               </Events>
@@ -1230,6 +1262,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel18">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1245,6 +1280,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel19">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1260,6 +1298,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel20">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1275,6 +1316,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel21">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1290,6 +1334,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N13">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N13MouseClicked"/>
               </Events>
@@ -1326,6 +1373,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel23">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1341,6 +1391,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel24">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1356,6 +1409,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel27">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1371,6 +1427,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel29">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1386,6 +1445,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel30">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1401,6 +1463,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel31">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1416,6 +1481,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N3">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N3MouseClicked"/>
               </Events>
@@ -1452,6 +1520,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel33">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1467,6 +1538,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel34">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1482,6 +1556,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel35">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1497,6 +1574,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel36">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1512,6 +1592,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel41">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1527,6 +1610,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N9">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N9MouseClicked"/>
               </Events>
@@ -1563,6 +1649,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel43">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1578,6 +1667,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel44">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1593,6 +1685,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel45">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1608,6 +1703,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel46">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1623,6 +1721,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel50">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1638,6 +1739,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N15">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N15MouseClicked"/>
               </Events>
@@ -1674,6 +1778,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel52">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1689,6 +1796,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel53">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1704,6 +1814,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel54">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1719,6 +1832,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel55">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1734,6 +1850,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel59">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1749,6 +1868,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N21">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N21MouseClicked"/>
               </Events>
@@ -1785,6 +1907,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel61">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1800,6 +1925,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel62">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1815,6 +1943,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel63">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1830,6 +1961,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel64">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1845,6 +1979,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel68">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1860,6 +1997,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N19">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N19MouseClicked"/>
               </Events>
@@ -1896,6 +2036,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel70">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1911,6 +2054,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel74">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1926,6 +2072,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel75">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1941,6 +2090,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel76">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1956,6 +2108,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel77">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1971,6 +2126,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N27">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N27MouseClicked"/>
               </Events>
@@ -2007,6 +2165,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel79">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2022,6 +2183,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel80">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2037,6 +2201,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel81">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2052,6 +2219,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel82">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2067,6 +2237,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel86">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2082,6 +2255,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N25">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N25MouseClicked"/>
               </Events>
@@ -2118,6 +2294,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel88">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2133,6 +2312,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel92">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2148,6 +2330,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel93">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2163,6 +2348,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel94">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2178,6 +2366,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel98">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2193,6 +2384,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel99">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2208,6 +2402,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel100">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2223,6 +2420,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N31">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N31MouseClicked"/>
               </Events>
@@ -2259,6 +2459,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel105">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2274,6 +2477,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel106">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2289,6 +2495,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N36">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N36MouseClicked"/>
               </Events>
@@ -2325,6 +2534,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel110">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2340,6 +2552,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel111">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2355,6 +2570,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel112">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -2370,6 +2588,9 @@
               </Layout>
             </Container>
             <Container class="javax.swing.JPanel" name="N28">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N28MouseClicked"/>
               </Events>
@@ -2406,6 +2627,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N22">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N22MouseClicked"/>
               </Events>
@@ -2442,6 +2666,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N10">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N10MouseClicked"/>
               </Events>
@@ -2478,6 +2705,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N4">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N4MouseClicked"/>
               </Events>
@@ -2514,6 +2744,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N6">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N6MouseClicked"/>
               </Events>
@@ -2550,6 +2783,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N16">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N16MouseClicked"/>
               </Events>
@@ -2586,6 +2822,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N18">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N18MouseClicked"/>
               </Events>
@@ -2622,6 +2861,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N12">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N12MouseClicked"/>
               </Events>
@@ -2658,6 +2900,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N33">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N33MouseClicked"/>
               </Events>
@@ -2694,6 +2939,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N24">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N24MouseClicked"/>
               </Events>
@@ -2730,6 +2978,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N32">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N32MouseClicked"/>
               </Events>
@@ -2766,6 +3017,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N14">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N14MouseClicked"/>
               </Events>
@@ -2802,6 +3056,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N11">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N11MouseClicked"/>
               </Events>
@@ -2838,6 +3095,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N2">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N2MouseClicked"/>
               </Events>
@@ -2874,6 +3134,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N20">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N20MouseClicked"/>
               </Events>
@@ -2910,6 +3173,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N26">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N26MouseClicked"/>
               </Events>
@@ -2946,6 +3212,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N23">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N23MouseClicked"/>
               </Events>
@@ -2982,6 +3251,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N17">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N17MouseClicked"/>
               </Events>
@@ -3018,6 +3290,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N29">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N29MouseClicked"/>
               </Events>
@@ -3054,6 +3329,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N8">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N8MouseClicked"/>
               </Events>
@@ -3090,6 +3368,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N35">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N35MouseClicked"/>
               </Events>
@@ -3126,6 +3407,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="ODD">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3159,6 +3443,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N5">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N5MouseClicked"/>
               </Events>
@@ -3195,6 +3482,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N34">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="N34MouseClicked"/>
               </Events>
@@ -3231,6 +3521,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="Negro">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3264,6 +3557,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="Rojo">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3297,6 +3593,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel140">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3330,6 +3629,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel141">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3363,6 +3665,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel16a36">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3396,6 +3701,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel143">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3429,6 +3737,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel145">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3462,6 +3773,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="Jpanel2to1_3">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3495,6 +3809,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="Jpanel2to1_2">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3528,6 +3845,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="Jpanel2to1">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3561,6 +3881,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="N0">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3594,6 +3917,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel149">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3627,6 +3953,9 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel150">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">

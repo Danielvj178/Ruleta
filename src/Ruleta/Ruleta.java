@@ -312,8 +312,10 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
 
         Tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/Casino.jpg"))); // NOI18N
+        Tablero.setOpaque(false);
         Tablero.setVisibleLogo(false);
 
+        jPanel3.setOpaque(false);
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel3MouseClicked(evt);
@@ -331,6 +333,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
+        jPanel2.setOpaque(false);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -344,6 +348,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
         N30.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         N30.setMaximumSize(new java.awt.Dimension(32800, 32767));
+        N30.setOpaque(false);
         N30.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N30MouseClicked(evt);
@@ -352,6 +357,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         N30.setLayout(null);
         N30.add(jLabel30);
         jLabel30.setBounds(10, 20, 30, 10);
+
+        jPanel4.setOpaque(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -364,6 +371,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 52, Short.MAX_VALUE)
         );
 
+        jPanel6.setOpaque(false);
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -375,6 +384,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        N1.setOpaque(false);
         N1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N1MouseClicked(evt);
@@ -402,6 +412,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel10.setOpaque(false);
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -412,6 +424,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 57, Short.MAX_VALUE)
         );
+
+        jPanel11.setOpaque(false);
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -424,6 +438,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        jPanel12.setOpaque(false);
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
@@ -434,6 +450,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 9, Short.MAX_VALUE)
         );
+
+        jPanel16.setOpaque(false);
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
@@ -446,6 +464,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 70, Short.MAX_VALUE)
         );
 
+        N7.setOpaque(false);
         N7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N7MouseClicked(evt);
@@ -473,6 +492,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel18.setOpaque(false);
+
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
         jPanel18Layout.setHorizontalGroup(
@@ -483,6 +504,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 65, Short.MAX_VALUE)
         );
+
+        jPanel19.setOpaque(false);
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -495,6 +518,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel20.setOpaque(false);
+
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
@@ -505,6 +530,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 9, Short.MAX_VALUE)
         );
+
+        jPanel21.setOpaque(false);
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -517,6 +544,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        N13.setOpaque(false);
         N13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N13MouseClicked(evt);
@@ -544,6 +572,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 26, Short.MAX_VALUE)))
         );
 
+        jPanel23.setOpaque(false);
+
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
         jPanel23Layout.setHorizontalGroup(
@@ -554,6 +584,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 13, Short.MAX_VALUE)
         );
+
+        jPanel24.setOpaque(false);
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
@@ -566,6 +598,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel27.setOpaque(false);
+
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
         jPanel27.setLayout(jPanel27Layout);
         jPanel27Layout.setHorizontalGroup(
@@ -576,6 +610,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 57, Short.MAX_VALUE)
         );
+
+        jPanel29.setOpaque(false);
 
         javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
         jPanel29.setLayout(jPanel29Layout);
@@ -588,6 +624,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 62, Short.MAX_VALUE)
         );
 
+        jPanel30.setOpaque(false);
+
         javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
         jPanel30.setLayout(jPanel30Layout);
         jPanel30Layout.setHorizontalGroup(
@@ -598,6 +636,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 9, Short.MAX_VALUE)
         );
+
+        jPanel31.setOpaque(false);
 
         javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
         jPanel31.setLayout(jPanel31Layout);
@@ -610,6 +650,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N3.setOpaque(false);
         N3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N3MouseClicked(evt);
@@ -637,6 +678,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel33.setOpaque(false);
+
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
         jPanel33Layout.setHorizontalGroup(
@@ -647,6 +690,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 69, Short.MAX_VALUE)
         );
+
+        jPanel34.setOpaque(false);
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
         jPanel34.setLayout(jPanel34Layout);
@@ -659,6 +704,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        jPanel35.setOpaque(false);
+
         javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
         jPanel35.setLayout(jPanel35Layout);
         jPanel35Layout.setHorizontalGroup(
@@ -669,6 +716,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 12, Short.MAX_VALUE)
         );
+
+        jPanel36.setOpaque(false);
 
         javax.swing.GroupLayout jPanel36Layout = new javax.swing.GroupLayout(jPanel36);
         jPanel36.setLayout(jPanel36Layout);
@@ -681,6 +730,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel41.setOpaque(false);
+
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
         jPanel41Layout.setHorizontalGroup(
@@ -692,6 +743,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N9.setOpaque(false);
         N9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N9MouseClicked(evt);
@@ -719,6 +771,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel43.setOpaque(false);
+
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
         jPanel43Layout.setHorizontalGroup(
@@ -729,6 +783,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 57, Short.MAX_VALUE)
         );
+
+        jPanel44.setOpaque(false);
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);
@@ -741,6 +797,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        jPanel45.setOpaque(false);
+
         javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
         jPanel45.setLayout(jPanel45Layout);
         jPanel45Layout.setHorizontalGroup(
@@ -751,6 +809,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 12, Short.MAX_VALUE)
         );
+
+        jPanel46.setOpaque(false);
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
@@ -763,6 +823,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel50.setOpaque(false);
+
         javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
         jPanel50.setLayout(jPanel50Layout);
         jPanel50Layout.setHorizontalGroup(
@@ -774,6 +836,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N15.setOpaque(false);
         N15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N15MouseClicked(evt);
@@ -801,6 +864,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel52.setOpaque(false);
+
         javax.swing.GroupLayout jPanel52Layout = new javax.swing.GroupLayout(jPanel52);
         jPanel52.setLayout(jPanel52Layout);
         jPanel52Layout.setHorizontalGroup(
@@ -811,6 +876,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 69, Short.MAX_VALUE)
         );
+
+        jPanel53.setOpaque(false);
 
         javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
         jPanel53.setLayout(jPanel53Layout);
@@ -823,6 +890,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        jPanel54.setOpaque(false);
+
         javax.swing.GroupLayout jPanel54Layout = new javax.swing.GroupLayout(jPanel54);
         jPanel54.setLayout(jPanel54Layout);
         jPanel54Layout.setHorizontalGroup(
@@ -833,6 +902,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 12, Short.MAX_VALUE)
         );
+
+        jPanel55.setOpaque(false);
 
         javax.swing.GroupLayout jPanel55Layout = new javax.swing.GroupLayout(jPanel55);
         jPanel55.setLayout(jPanel55Layout);
@@ -845,6 +916,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel59.setOpaque(false);
+
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
         jPanel59Layout.setHorizontalGroup(
@@ -856,6 +929,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N21.setOpaque(false);
         N21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N21MouseClicked(evt);
@@ -883,6 +957,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel61.setOpaque(false);
+
         javax.swing.GroupLayout jPanel61Layout = new javax.swing.GroupLayout(jPanel61);
         jPanel61.setLayout(jPanel61Layout);
         jPanel61Layout.setHorizontalGroup(
@@ -893,6 +969,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 57, Short.MAX_VALUE)
         );
+
+        jPanel62.setOpaque(false);
 
         javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
         jPanel62.setLayout(jPanel62Layout);
@@ -905,6 +983,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        jPanel63.setOpaque(false);
+
         javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
         jPanel63.setLayout(jPanel63Layout);
         jPanel63Layout.setHorizontalGroup(
@@ -915,6 +995,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 12, Short.MAX_VALUE)
         );
+
+        jPanel64.setOpaque(false);
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
@@ -927,6 +1009,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel68.setOpaque(false);
+
         javax.swing.GroupLayout jPanel68Layout = new javax.swing.GroupLayout(jPanel68);
         jPanel68.setLayout(jPanel68Layout);
         jPanel68Layout.setHorizontalGroup(
@@ -938,6 +1022,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 59, Short.MAX_VALUE)
         );
 
+        N19.setOpaque(false);
         N19.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N19MouseClicked(evt);
@@ -965,6 +1050,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel70.setOpaque(false);
+
         javax.swing.GroupLayout jPanel70Layout = new javax.swing.GroupLayout(jPanel70);
         jPanel70.setLayout(jPanel70Layout);
         jPanel70Layout.setHorizontalGroup(
@@ -975,6 +1062,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel70Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 57, Short.MAX_VALUE)
         );
+
+        jPanel74.setOpaque(false);
 
         javax.swing.GroupLayout jPanel74Layout = new javax.swing.GroupLayout(jPanel74);
         jPanel74.setLayout(jPanel74Layout);
@@ -987,6 +1076,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel75.setOpaque(false);
+
         javax.swing.GroupLayout jPanel75Layout = new javax.swing.GroupLayout(jPanel75);
         jPanel75.setLayout(jPanel75Layout);
         jPanel75Layout.setHorizontalGroup(
@@ -997,6 +1088,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel75Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 9, Short.MAX_VALUE)
         );
+
+        jPanel76.setOpaque(false);
 
         javax.swing.GroupLayout jPanel76Layout = new javax.swing.GroupLayout(jPanel76);
         jPanel76.setLayout(jPanel76Layout);
@@ -1009,6 +1102,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel77.setOpaque(false);
+
         javax.swing.GroupLayout jPanel77Layout = new javax.swing.GroupLayout(jPanel77);
         jPanel77.setLayout(jPanel77Layout);
         jPanel77Layout.setHorizontalGroup(
@@ -1020,6 +1115,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 69, Short.MAX_VALUE)
         );
 
+        N27.setOpaque(false);
         N27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N27MouseClicked(evt);
@@ -1047,6 +1143,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel79.setOpaque(false);
+
         javax.swing.GroupLayout jPanel79Layout = new javax.swing.GroupLayout(jPanel79);
         jPanel79.setLayout(jPanel79Layout);
         jPanel79Layout.setHorizontalGroup(
@@ -1057,6 +1155,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel79Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 69, Short.MAX_VALUE)
         );
+
+        jPanel80.setOpaque(false);
 
         javax.swing.GroupLayout jPanel80Layout = new javax.swing.GroupLayout(jPanel80);
         jPanel80.setLayout(jPanel80Layout);
@@ -1069,6 +1169,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        jPanel81.setOpaque(false);
+
         javax.swing.GroupLayout jPanel81Layout = new javax.swing.GroupLayout(jPanel81);
         jPanel81.setLayout(jPanel81Layout);
         jPanel81Layout.setHorizontalGroup(
@@ -1079,6 +1181,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel81Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 12, Short.MAX_VALUE)
         );
+
+        jPanel82.setOpaque(false);
 
         javax.swing.GroupLayout jPanel82Layout = new javax.swing.GroupLayout(jPanel82);
         jPanel82.setLayout(jPanel82Layout);
@@ -1091,6 +1195,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel86.setOpaque(false);
+
         javax.swing.GroupLayout jPanel86Layout = new javax.swing.GroupLayout(jPanel86);
         jPanel86.setLayout(jPanel86Layout);
         jPanel86Layout.setHorizontalGroup(
@@ -1102,6 +1208,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        N25.setOpaque(false);
         N25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N25MouseClicked(evt);
@@ -1129,6 +1236,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel88.setOpaque(false);
+
         javax.swing.GroupLayout jPanel88Layout = new javax.swing.GroupLayout(jPanel88);
         jPanel88.setLayout(jPanel88Layout);
         jPanel88Layout.setHorizontalGroup(
@@ -1139,6 +1248,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel88Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 57, Short.MAX_VALUE)
         );
+
+        jPanel92.setOpaque(false);
 
         javax.swing.GroupLayout jPanel92Layout = new javax.swing.GroupLayout(jPanel92);
         jPanel92.setLayout(jPanel92Layout);
@@ -1151,6 +1262,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel93.setOpaque(false);
+
         javax.swing.GroupLayout jPanel93Layout = new javax.swing.GroupLayout(jPanel93);
         jPanel93.setLayout(jPanel93Layout);
         jPanel93Layout.setHorizontalGroup(
@@ -1161,6 +1274,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel93Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 9, Short.MAX_VALUE)
         );
+
+        jPanel94.setOpaque(false);
 
         javax.swing.GroupLayout jPanel94Layout = new javax.swing.GroupLayout(jPanel94);
         jPanel94.setLayout(jPanel94Layout);
@@ -1173,6 +1288,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        jPanel98.setOpaque(false);
+
         javax.swing.GroupLayout jPanel98Layout = new javax.swing.GroupLayout(jPanel98);
         jPanel98.setLayout(jPanel98Layout);
         jPanel98Layout.setHorizontalGroup(
@@ -1183,6 +1300,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel98Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 9, Short.MAX_VALUE)
         );
+
+        jPanel99.setOpaque(false);
 
         javax.swing.GroupLayout jPanel99Layout = new javax.swing.GroupLayout(jPanel99);
         jPanel99.setLayout(jPanel99Layout);
@@ -1195,6 +1314,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 57, Short.MAX_VALUE)
         );
 
+        jPanel100.setOpaque(false);
+
         javax.swing.GroupLayout jPanel100Layout = new javax.swing.GroupLayout(jPanel100);
         jPanel100.setLayout(jPanel100Layout);
         jPanel100Layout.setHorizontalGroup(
@@ -1206,6 +1327,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 13, Short.MAX_VALUE)
         );
 
+        N31.setOpaque(false);
         N31.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N31MouseClicked(evt);
@@ -1233,6 +1355,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel105.setOpaque(false);
+
         javax.swing.GroupLayout jPanel105Layout = new javax.swing.GroupLayout(jPanel105);
         jPanel105.setLayout(jPanel105Layout);
         jPanel105Layout.setHorizontalGroup(
@@ -1243,6 +1367,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel105Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 13, Short.MAX_VALUE)
         );
+
+        jPanel106.setOpaque(false);
 
         javax.swing.GroupLayout jPanel106Layout = new javax.swing.GroupLayout(jPanel106);
         jPanel106.setLayout(jPanel106Layout);
@@ -1255,6 +1381,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        N36.setOpaque(false);
         N36.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N36MouseClicked(evt);
@@ -1282,6 +1409,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel110.setOpaque(false);
+
         javax.swing.GroupLayout jPanel110Layout = new javax.swing.GroupLayout(jPanel110);
         jPanel110.setLayout(jPanel110Layout);
         jPanel110Layout.setHorizontalGroup(
@@ -1292,6 +1421,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel110Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 68, Short.MAX_VALUE)
         );
+
+        jPanel111.setOpaque(false);
 
         javax.swing.GroupLayout jPanel111Layout = new javax.swing.GroupLayout(jPanel111);
         jPanel111.setLayout(jPanel111Layout);
@@ -1304,6 +1435,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        jPanel112.setOpaque(false);
+
         javax.swing.GroupLayout jPanel112Layout = new javax.swing.GroupLayout(jPanel112);
         jPanel112.setLayout(jPanel112Layout);
         jPanel112Layout.setHorizontalGroup(
@@ -1315,6 +1448,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
+        N28.setOpaque(false);
         N28.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N28MouseClicked(evt);
@@ -1342,6 +1476,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N22.setOpaque(false);
         N22.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N22MouseClicked(evt);
@@ -1369,6 +1504,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N10.setOpaque(false);
         N10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N10MouseClicked(evt);
@@ -1396,6 +1532,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N4.setOpaque(false);
         N4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N4MouseClicked(evt);
@@ -1423,6 +1560,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N6.setOpaque(false);
         N6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N6MouseClicked(evt);
@@ -1450,6 +1588,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N16.setOpaque(false);
         N16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N16MouseClicked(evt);
@@ -1477,6 +1616,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 26, Short.MAX_VALUE)))
         );
 
+        N18.setOpaque(false);
         N18.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N18MouseClicked(evt);
@@ -1504,6 +1644,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N12.setOpaque(false);
         N12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N12MouseClicked(evt);
@@ -1531,6 +1672,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N33.setOpaque(false);
         N33.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N33MouseClicked(evt);
@@ -1558,6 +1700,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N24.setOpaque(false);
         N24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N24MouseClicked(evt);
@@ -1585,6 +1728,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N32.setOpaque(false);
         N32.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N32MouseClicked(evt);
@@ -1612,6 +1756,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N14.setOpaque(false);
         N14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N14MouseClicked(evt);
@@ -1639,6 +1784,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N11.setOpaque(false);
         N11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N11MouseClicked(evt);
@@ -1666,6 +1812,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N2.setOpaque(false);
         N2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N2MouseClicked(evt);
@@ -1693,6 +1840,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N20.setOpaque(false);
         N20.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N20MouseClicked(evt);
@@ -1720,6 +1868,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N26.setOpaque(false);
         N26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N26MouseClicked(evt);
@@ -1747,6 +1896,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N23.setOpaque(false);
         N23.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N23MouseClicked(evt);
@@ -1774,6 +1924,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N17.setOpaque(false);
         N17.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N17MouseClicked(evt);
@@ -1801,6 +1952,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 18, Short.MAX_VALUE)))
         );
 
+        N29.setOpaque(false);
         N29.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N29MouseClicked(evt);
@@ -1828,6 +1980,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        N8.setOpaque(false);
         N8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N8MouseClicked(evt);
@@ -1855,6 +2008,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N35.setOpaque(false);
         N35.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N35MouseClicked(evt);
@@ -1882,6 +2036,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 16, Short.MAX_VALUE)))
         );
 
+        ODD.setOpaque(false);
+
         javax.swing.GroupLayout ODDLayout = new javax.swing.GroupLayout(ODD);
         ODD.setLayout(ODDLayout);
         ODDLayout.setHorizontalGroup(
@@ -1903,6 +2059,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addContainerGap(17, Short.MAX_VALUE)))
         );
 
+        N5.setOpaque(false);
         N5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N5MouseClicked(evt);
@@ -1930,6 +2087,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N34.setOpaque(false);
         N34.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 N34MouseClicked(evt);
@@ -1957,6 +2115,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        Negro.setOpaque(false);
+
         javax.swing.GroupLayout NegroLayout = new javax.swing.GroupLayout(Negro);
         Negro.setLayout(NegroLayout);
         NegroLayout.setHorizontalGroup(
@@ -1977,6 +2137,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabelNegro, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        Rojo.setOpaque(false);
 
         javax.swing.GroupLayout RojoLayout = new javax.swing.GroupLayout(Rojo);
         Rojo.setLayout(RojoLayout);
@@ -1999,6 +2161,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel140.setOpaque(false);
+
         javax.swing.GroupLayout jPanel140Layout = new javax.swing.GroupLayout(jPanel140);
         jPanel140.setLayout(jPanel140Layout);
         jPanel140Layout.setHorizontalGroup(
@@ -2019,6 +2183,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabelEven, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        jPanel141.setOpaque(false);
 
         javax.swing.GroupLayout jPanel141Layout = new javax.swing.GroupLayout(jPanel141);
         jPanel141.setLayout(jPanel141Layout);
@@ -2041,6 +2207,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel16a36.setOpaque(false);
+
         javax.swing.GroupLayout jPanel16a36Layout = new javax.swing.GroupLayout(jPanel16a36);
         jPanel16a36.setLayout(jPanel16a36Layout);
         jPanel16a36Layout.setHorizontalGroup(
@@ -2061,6 +2229,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel12a36, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        jPanel143.setOpaque(false);
 
         javax.swing.GroupLayout jPanel143Layout = new javax.swing.GroupLayout(jPanel143);
         jPanel143.setLayout(jPanel143Layout);
@@ -2083,6 +2253,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel145.setOpaque(false);
+
         javax.swing.GroupLayout jPanel145Layout = new javax.swing.GroupLayout(jPanel145);
         jPanel145.setLayout(jPanel145Layout);
         jPanel145Layout.setHorizontalGroup(
@@ -2103,6 +2275,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel13a22, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        Jpanel2to1_3.setOpaque(false);
 
         javax.swing.GroupLayout Jpanel2to1_3Layout = new javax.swing.GroupLayout(Jpanel2to1_3);
         Jpanel2to1_3.setLayout(Jpanel2to1_3Layout);
@@ -2125,6 +2299,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        Jpanel2to1_2.setOpaque(false);
+
         javax.swing.GroupLayout Jpanel2to1_2Layout = new javax.swing.GroupLayout(Jpanel2to1_2);
         Jpanel2to1_2.setLayout(Jpanel2to1_2Layout);
         Jpanel2to1_2Layout.setHorizontalGroup(
@@ -2145,6 +2321,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabelFila2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        Jpanel2to1.setOpaque(false);
 
         javax.swing.GroupLayout Jpanel2to1Layout = new javax.swing.GroupLayout(Jpanel2to1);
         Jpanel2to1.setLayout(Jpanel2to1Layout);
@@ -2167,6 +2345,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        N0.setOpaque(false);
+
         javax.swing.GroupLayout N0Layout = new javax.swing.GroupLayout(N0);
         N0.setLayout(N0Layout);
         N0Layout.setHorizontalGroup(
@@ -2188,6 +2368,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel149.setOpaque(false);
+
         javax.swing.GroupLayout jPanel149Layout = new javax.swing.GroupLayout(jPanel149);
         jPanel149.setLayout(jPanel149Layout);
         jPanel149Layout.setHorizontalGroup(
@@ -2208,6 +2390,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                     .addComponent(jLabel1a12_1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        jPanel150.setOpaque(false);
 
         javax.swing.GroupLayout jPanel150Layout = new javax.swing.GroupLayout(jPanel150);
         jPanel150.setLayout(jPanel150Layout);
@@ -2266,7 +2450,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                 .addGap(4, 4, 4)
                                                 .addComponent(N4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(0, 0, Short.MAX_VALUE))))
+                                        .addGap(0, 2, Short.MAX_VALUE))))
                             .addGroup(TableroLayout.createSequentialGroup()
                                 .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2448,7 +2632,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                     .addGroup(TableroLayout.createSequentialGroup()
                                         .addGap(1, 1, 1)
                                         .addComponent(N23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)))
                                 .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, TableroLayout.createSequentialGroup()
                                         .addComponent(jPanel93, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2479,20 +2663,21 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                     .addGroup(TableroLayout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jPanel111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(TableroLayout.createSequentialGroup()
                                                 .addComponent(N33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(4, 4, 4)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jPanel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jPanel111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(4, 4, 4)
+                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(TableroLayout.createSequentialGroup()
-                                                .addComponent(jPanel112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(11, 11, 11))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TableroLayout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(N36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(10, 10, 10))))
+                                                .addGap(10, 10, 10))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TableroLayout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jPanel112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18))))
                                     .addGroup(TableroLayout.createSequentialGroup()
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(TableroLayout.createSequentialGroup()
@@ -2748,19 +2933,19 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                                         .addGap(9, 9, 9)
                                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(TableroLayout.createSequentialGroup()
-                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(TableroLayout.createSequentialGroup()
-                                                .addGap(2, 2, 2)
-                                                .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(N33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jPanel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(N36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addComponent(Jpanel2to1_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Jpanel2to1_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Jpanel2to1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(TableroLayout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
+                                        .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(N33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jPanel110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(N36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(TableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jPanel112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Jpanel2to1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(jPanel111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(TableroLayout.createSequentialGroup()
                         .addContainerGap()
