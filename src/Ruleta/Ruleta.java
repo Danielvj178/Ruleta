@@ -5,11 +5,18 @@
  */
 package Ruleta;
 
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
+import java.util.Timer;
+import java.util.TimerTask;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,11 +24,7 @@ import javax.swing.JFrame;
  */
 public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
-    /**
-     * Creates new form Ruleta
-     */
     private int Val;
-    
 
     public Ruleta() {
         initComponents();
@@ -49,6 +52,10 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         Moneda50 = new javax.swing.JButton();
         jButton100 = new javax.swing.JButton();
         Ruleta = new jcMousePanel.jcMousePanel();
+        n0 = new javax.swing.JLabel();
+        n26 = new javax.swing.JLabel();
+        n3 = new javax.swing.JLabel();
+        n35 = new javax.swing.JLabel();
         Tablero = new jcMousePanel.jcMousePanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -161,6 +168,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         N0 = new javax.swing.JPanel();
         jPanel149 = new javax.swing.JPanel();
         jPanel150 = new javax.swing.JPanel();
+        play = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ruleta");
@@ -222,11 +230,34 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         Ruleta.setLayout(RuletaLayout);
         RuletaLayout.setHorizontalGroup(
             RuletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 449, Short.MAX_VALUE)
+            .addGroup(RuletaLayout.createSequentialGroup()
+                .addGap(115, 115, 115)
+                .addComponent(n0, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(n26, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(n3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addComponent(n35, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(237, Short.MAX_VALUE))
         );
         RuletaLayout.setVerticalGroup(
             RuletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 454, Short.MAX_VALUE)
+            .addGroup(RuletaLayout.createSequentialGroup()
+                .addContainerGap(350, Short.MAX_VALUE)
+                .addGroup(RuletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RuletaLayout.createSequentialGroup()
+                        .addComponent(n26, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RuletaLayout.createSequentialGroup()
+                        .addComponent(n0, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(85, 85, 85))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RuletaLayout.createSequentialGroup()
+                        .addComponent(n3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RuletaLayout.createSequentialGroup()
+                        .addComponent(n35, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50))))
         );
 
         Tablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/Casino.jpg"))); // NOI18N
@@ -292,6 +323,12 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 13, Short.MAX_VALUE)
         );
+
+        N1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                N1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout N1Layout = new javax.swing.GroupLayout(N1);
         N1.setLayout(N1Layout);
@@ -1994,14 +2031,28 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                 .addGap(19, 19, 19))
         );
 
+        play.setText("Jugar");
+        play.setActionCommand("Jugar");
+        play.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                playActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
         jcMousePanel1.setLayout(jcMousePanel1Layout);
         jcMousePanel1Layout.setHorizontalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addContainerGap(14, Short.MAX_VALUE)
+                        .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(184, 184, 184)
+                        .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
                         .addComponent(Moneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2019,22 +2070,22 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(Tablero, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addContainerGap(138, Short.MAX_VALUE)
-                        .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(Tablero, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Moneda1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Moneda5, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Moneda25, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Moneda50, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton100, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(41, 41, 41)))
-                .addGap(99, 99, 99))
+                    .addComponent(Moneda1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Moneda5, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Moneda25, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Moneda50, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton100, javax.swing.GroupLayout.Alignment.LEADING))
+                .addGap(140, 140, 140))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(98, 98, 98))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2092,13 +2143,82 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void N30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N30MouseClicked
         // TODO add your handling code here:
-        v1.setLabel(Val, jLabel1);
+        v30.setLabel(Val, jLabel1);
     }//GEN-LAST:event_N30MouseClicked
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jPanel3MouseClicked
+
+    private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
+        // TODO add your handling code here:
+        int opc = numero_aleatorio(4, 1);
+        switch (opc) {
+            case 1:
+                N1.get
+                n0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                break;
+            case 2:
+                n26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                break;
+            case 3:
+                n3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                break;
+            case 4:
+                n35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                break;
+        }
+        //Milisegundos (segundos*1000) luego de los cuales ejecutar el código
+        int milisegundos = 0;
+ 
+        /*Aquí es donde se mencionó la importancia de definir un tiempo
+         luego del cual se volverá a ejecutar el código, si es que no se
+         desea eso, se puede dejar en 1 (no en 0) ya que en la clase Codigo 
+         se realizará todo el debido control*/
+        int milisegundosRepeticion = 1000;
+ 
+        //Temporizador instanciado desde la clase Timer
+        Timer temporizador = new Timer("");
+ 
+        //Instancia de la clase que contiene el código a ejecutar
+        Temporizador c = new Temporizador(opc,  n0,  n26,  n3,  n35);
+ 
+        /*Se hace un llamado al temporizador para que ejecute el
+         * código en X milisegundos y que repita el código luego del tiempo
+         * determinado.
+         */
+        temporizador.schedule(c, milisegundos, milisegundosRepeticion);
+        /*int vueltas = numero_aleatorio(3, 1);
+        for (int i = 0; i < vueltas; i++) {
+            for (int j = 0; j < 4; j++) {
+                switch (j) {
+                    case 1:
+                        n0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                        
+                        break;
+                    case 2:
+                        n26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                        break;
+                    case 3:
+                        n3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                        break;
+                    case 4:
+                        n35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                        break;
+                }
+            }
+        }*/
+    }//GEN-LAST:event_playActionPerformed
+
+    private void N1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N1MouseClicked
+        // TODO add your handling code here:
+        v1.setLabel(Val, jLabel1);
+    }//GEN-LAST:event_N1MouseClicked
+
+    private int numero_aleatorio(int max, int min) {
+        return min + (int) (Math.random() * ((max - min) + 1));
+    }
 
     // Private void 
     public static void main(String args[]) {
@@ -2132,14 +2252,13 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         /*
          * Create and display the form
          */
-
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
                 new Ruleta().setVisible(true);
             }
         });
-        
+
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Jpanel2to1;
@@ -2261,9 +2380,16 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JPanel jPanel98;
     private javax.swing.JPanel jPanel99;
     private jcMousePanel.jcMousePanel jcMousePanel1;
+    private javax.swing.JLabel n0;
+    private javax.swing.JLabel n26;
+    private javax.swing.JLabel n3;
+    private javax.swing.JLabel n35;
+    private javax.swing.JButton play;
     // End of variables declaration//GEN-END:variables
 
+    Valor v30 = new Valor();
     Valor v1 = new Valor();
+
     @Override
     public void actionPerformed(ActionEvent e) {
     }
