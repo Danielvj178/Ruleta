@@ -2704,7 +2704,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
         // TODO add your handling code here:
-        int opc = 1;//numero_aleatorio(4, 1);
+        int opc = numero_aleatorio(4, 1);
 
         switch (opc) {
             case 1:
