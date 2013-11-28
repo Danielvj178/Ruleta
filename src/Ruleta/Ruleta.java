@@ -60,7 +60,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         N30 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         N1 = new javax.swing.JPanel();
@@ -184,7 +184,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jcMousePanel1.setVisibleLogo(false);
 
         Moneda1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha1.png"))); // NOI18N
-        Moneda1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Moneda1.setBorder(new javax.swing.border.SoftBevelBorder(1));
         Moneda1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda1ActionPerformed(evt);
@@ -192,7 +192,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         Moneda5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha2.png"))); // NOI18N
-        Moneda5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Moneda5.setBorder(new javax.swing.border.SoftBevelBorder(1));
         Moneda5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda5ActionPerformed(evt);
@@ -200,7 +200,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         Moneda25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha25.png"))); // NOI18N
-        Moneda25.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Moneda25.setBorder(new javax.swing.border.SoftBevelBorder(1));
         Moneda25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda25ActionPerformed(evt);
@@ -208,7 +208,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         Moneda50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha50.png"))); // NOI18N
-        Moneda50.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        Moneda50.setBorder(new javax.swing.border.SoftBevelBorder(1));
         Moneda50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Moneda50ActionPerformed(evt);
@@ -216,7 +216,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         });
 
         jButton100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/ficha100.png"))); // NOI18N
-        jButton100.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jButton100.setBorder(new javax.swing.border.SoftBevelBorder(1));
         jButton100.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton100ActionPerformed(evt);
@@ -299,8 +299,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             }
         });
         N30.setLayout(null);
-        N30.add(jLabel1);
-        jLabel1.setBounds(0, 20, 30, 20);
+        N30.add(jLabel30);
+        jLabel30.setBounds(10, 20, 30, 20);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -2032,7 +2032,6 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
 
         play.setText("Jugar");
-        play.setActionCommand("Jugar");
         play.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 playActionPerformed(evt);
@@ -2143,7 +2142,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void N30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N30MouseClicked
         // TODO add your handling code here:
-        v30.setLabel(Val, jLabel1);
+        v30.setLabel(Val, jLabel30);
     }//GEN-LAST:event_N30MouseClicked
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
@@ -2170,25 +2169,25 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                 break;
         }
         //Milisegundos (segundos*1000) luego de los cuales ejecutar el código
-        int milisegundos = 0;
+        //int milisegundos = 0;
  
         /*Aquí es donde se mencionó la importancia de definir un tiempo
          luego del cual se volverá a ejecutar el código, si es que no se
          desea eso, se puede dejar en 1 (no en 0) ya que en la clase Codigo 
          se realizará todo el debido control*/
-        int milisegundosRepeticion = 1000;
+        //int milisegundosRepeticion = 1000;
  
         //Temporizador instanciado desde la clase Timer
-        Timer temporizador = new Timer("");
+        //Timer temporizador = new Timer("");
  
         //Instancia de la clase que contiene el código a ejecutar
-        Temporizador c = new Temporizador(opc,  n0,  n26,  n3,  n35);
+        //Temporizador c = new Temporizador(opc,  n0,  n26,  n3,  n35);
  
         /*Se hace un llamado al temporizador para que ejecute el
          * código en X milisegundos y que repita el código luego del tiempo
          * determinado.
          */
-        temporizador.schedule(c, milisegundos, milisegundosRepeticion);
+        //temporizador.schedule(c, milisegundos, milisegundosRepeticion);
         /*int vueltas = numero_aleatorio(3, 1);
         for (int i = 0; i < vueltas; i++) {
             for (int j = 0; j < 4; j++) {
@@ -2213,7 +2212,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void N1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N1MouseClicked
         // TODO add your handling code here:
-        v1.setLabel(Val, jLabel1);
+        v1.setLabel(Val, jLabel30);
     }//GEN-LAST:event_N1MouseClicked
 
     private int numero_aleatorio(int max, int min) {
@@ -2310,7 +2309,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private jcMousePanel.jcMousePanel Ruleta;
     private jcMousePanel.jcMousePanel Tablero;
     private javax.swing.JButton jButton100;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel100;
     private javax.swing.JPanel jPanel105;
