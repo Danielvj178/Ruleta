@@ -220,11 +220,11 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jLabel1a12_2 = new javax.swing.JLabel();
         play = new javax.swing.JButton();
         jplata = new javax.swing.JLabel();
+        jlabelNomCred = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ruleta");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setResizable(false);
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 formMouseClicked(evt);
@@ -1228,7 +1228,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         N25Layout.setVerticalGroup(
             N25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(N25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N25Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1246,7 +1246,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         jPanel88Layout.setVerticalGroup(
             jPanel88Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jPanel92.setOpaque(false);
@@ -1311,7 +1311,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         jPanel99Layout.setVerticalGroup(
             jPanel99Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jPanel100.setOpaque(false);
@@ -1347,7 +1347,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         N31Layout.setVerticalGroup(
             N31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(N31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N31Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1468,7 +1468,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         N28Layout.setVerticalGroup(
             N28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 57, Short.MAX_VALUE)
             .addGroup(N28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N28Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1664,7 +1664,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         N12Layout.setVerticalGroup(
             N12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(N12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N12Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1776,7 +1776,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         N14Layout.setVerticalGroup(
             N14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 46, Short.MAX_VALUE)
             .addGroup(N14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N14Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1832,7 +1832,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         );
         N2Layout.setVerticalGroup(
             N2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 46, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(N2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(N2Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -2961,80 +2961,97 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
                 .addGap(19, 19, 19))
         );
 
+        play.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         play.setText("Jugar");
+        play.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        play.setBorderPainted(false);
         play.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 playActionPerformed(evt);
             }
         });
 
+        jplata.setBackground(new java.awt.Color(255, 255, 255));
+        jplata.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jplata.setForeground(new java.awt.Color(255, 255, 255));
         jplata.setText("500000");
+
+        jlabelNomCred.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jlabelNomCred.setText("Crédito:");
 
         javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
         jcMousePanel1.setLayout(jcMousePanel1Layout);
         jcMousePanel1Layout.setHorizontalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
                         .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
                         .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41)
-                        .addComponent(jplata, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)))
+                        .addGap(156, 156, 156)))
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Tablero, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
                         .addComponent(Moneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(56, 56, 56)
                         .addComponent(Moneda5, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(50, 50, 50)
                         .addComponent(Moneda25, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22)
+                        .addGap(68, 68, 68)
                         .addComponent(Moneda50, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(64, 64, 64)
                         .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(Tablero, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(706, 706, 706))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jlabelNomCred, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jplata, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jcMousePanel1Layout.setVerticalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
+            .addGroup(jcMousePanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(Tablero, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Moneda1, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Moneda5, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Moneda25, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Moneda50, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton100, javax.swing.GroupLayout.Alignment.LEADING))
-                .addGap(140, 140, 140))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jlabelNomCred))
+                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(jplata, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(74, 74, 74))
+            .addGroup(jcMousePanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jplata, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jplata.getAccessibleContext().setAccessibleDescription("");
+        jlabelNomCred.getAccessibleContext().setAccessibleName("Crédito");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 2031, Short.MAX_VALUE)
-                .addGap(1125, 1125, 1125))
+            .addComponent(jcMousePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1331, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 691, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 22, Short.MAX_VALUE))
+            .addComponent(jcMousePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         getAccessibleContext().setAccessibleDescription("");
@@ -3819,6 +3836,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JPanel jPanel98;
     private javax.swing.JPanel jPanel99;
     private jcMousePanel.jcMousePanel jcMousePanel1;
+    private javax.swing.JLabel jlabelNomCred;
     private javax.swing.JLabel jplata;
     private javax.swing.JLabel n0;
     private javax.swing.JLabel n26;
