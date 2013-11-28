@@ -2692,7 +2692,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private void N30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N30MouseClicked
         // TODO add your handling code here:
         v30.setLabel(Val, jLabel30);
-        plata = plata-Val;
+        plata = plata - Val;
         System.out.println(plata);
         jplata.setText(Integer.toString(plata));
     }//GEN-LAST:event_N30MouseClicked
@@ -2704,24 +2704,38 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
         // TODO add your handling code here:
-        int opc = numero_aleatorio(4, 1);
+        int opc = numero_aleatorio(36, 0);
 
         switch (opc) {
-            case 1:
-                if (Integer.parseInt(jLabel30.getText()) != 0) {
-                    plata = plata + Integer.parseInt(jLabel30.getText());
+            case 0:
+                if (Integer.parseInt(jLabel0.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel0.getText());
                     jplata.setText(Integer.toString(plata));
                 }
-                n0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                break;
+            case 1:
+                if (Integer.parseInt(jLabel1.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel1.getText());
+                    jplata.setText(Integer.toString(plata));
+                }
                 break;
             case 2:
-                n26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                if (Integer.parseInt(jLabel2.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel2.getText());
+                    jplata.setText(Integer.toString(plata));
+                }
                 break;
             case 3:
-                n3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                if (Integer.parseInt(jLabel3.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel3.getText());
+                    jplata.setText(Integer.toString(plata));
+                }
                 break;
             case 4:
-                n35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+                if (Integer.parseInt(jLabel4.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel4.getText());
+                    jplata.setText(Integer.toString(plata));
+                }
                 break;
         }
         //Milisegundos (segundos*1000) luego de los cuales ejecutar el código
