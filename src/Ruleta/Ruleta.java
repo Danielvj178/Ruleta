@@ -25,6 +25,7 @@ import javax.swing.JOptionPane;
 public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private int Val;
+    private int plata = 500000;
 
     public Ruleta() {
         initComponents();
@@ -60,7 +61,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         N30 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         N1 = new javax.swing.JPanel();
@@ -169,6 +170,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         jPanel149 = new javax.swing.JPanel();
         jPanel150 = new javax.swing.JPanel();
         play = new javax.swing.JButton();
+        jplata = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ruleta");
@@ -299,8 +301,8 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             }
         });
         N30.setLayout(null);
-        N30.add(jLabel1);
-        jLabel1.setBounds(0, 20, 30, 20);
+        N30.add(jLabel30);
+        jLabel30.setBounds(0, 20, 30, 20);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -2039,20 +2041,23 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             }
         });
 
+        jplata.setText("500000");
+
         javax.swing.GroupLayout jcMousePanel1Layout = new javax.swing.GroupLayout(jcMousePanel1);
         jcMousePanel1.setLayout(jcMousePanel1Layout);
         jcMousePanel1Layout.setHorizontalGroup(
             jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addContainerGap(14, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
                         .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(jcMousePanel1Layout.createSequentialGroup()
-                        .addGap(184, 184, 184)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
                         .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(41, 41, 41)
+                        .addComponent(jplata, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)))
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jcMousePanel1Layout.createSequentialGroup()
                         .addComponent(Moneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2072,7 +2077,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(Tablero, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                 .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Moneda1, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Moneda5, javax.swing.GroupLayout.Alignment.LEADING)
@@ -2083,9 +2088,11 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jcMousePanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(Ruleta, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(98, 98, 98))
+                .addGap(18, 18, 18)
+                .addGroup(jcMousePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jplata, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2143,7 +2150,10 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void N30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N30MouseClicked
         // TODO add your handling code here:
-        v30.setLabel(Val, jLabel1);
+        v30.setLabel(Val, jLabel30);
+        plata = plata-Val;
+        System.out.println(plata);
+        jplata.setText(Integer.toString(plata));
     }//GEN-LAST:event_N30MouseClicked
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
@@ -2153,10 +2163,14 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
 
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
         // TODO add your handling code here:
-        int opc = numero_aleatorio(4, 1);
+        int opc = 1;//numero_aleatorio(4, 1);
+
         switch (opc) {
             case 1:
-                N1.get
+                if (Integer.parseInt(jLabel30.getText()) != 0) {
+                    plata = plata + Integer.parseInt(jLabel30.getText());
+                    jplata.setText(Integer.toString(plata));
+                }
                 n0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
                 break;
             case 2:
@@ -2171,49 +2185,49 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
         }
         //Milisegundos (segundos*1000) luego de los cuales ejecutar el código
         int milisegundos = 0;
- 
+
         /*Aquí es donde se mencionó la importancia de definir un tiempo
          luego del cual se volverá a ejecutar el código, si es que no se
          desea eso, se puede dejar en 1 (no en 0) ya que en la clase Codigo 
          se realizará todo el debido control*/
         int milisegundosRepeticion = 1000;
- 
+
         //Temporizador instanciado desde la clase Timer
         Timer temporizador = new Timer("");
- 
+
         //Instancia de la clase que contiene el código a ejecutar
-        Temporizador c = new Temporizador(opc,  n0,  n26,  n3,  n35);
- 
+        Temporizador c = new Temporizador(opc, n0, n26, n3, n35);
+
         /*Se hace un llamado al temporizador para que ejecute el
          * código en X milisegundos y que repita el código luego del tiempo
          * determinado.
          */
         temporizador.schedule(c, milisegundos, milisegundosRepeticion);
         /*int vueltas = numero_aleatorio(3, 1);
-        for (int i = 0; i < vueltas; i++) {
-            for (int j = 0; j < 4; j++) {
-                switch (j) {
-                    case 1:
-                        n0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+         for (int i = 0; i < vueltas; i++) {
+         for (int j = 0; j < 4; j++) {
+         switch (j) {
+         case 1:
+         n0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
                         
-                        break;
-                    case 2:
-                        n26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
-                        break;
-                    case 3:
-                        n3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
-                        break;
-                    case 4:
-                        n35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
-                        break;
-                }
-            }
-        }*/
+         break;
+         case 2:
+         n26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+         break;
+         case 3:
+         n3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+         break;
+         case 4:
+         n35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ruleta/Imagenes/bola1.png")));
+         break;
+         }
+         }
+         }*/
     }//GEN-LAST:event_playActionPerformed
 
     private void N1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_N1MouseClicked
         // TODO add your handling code here:
-        v1.setLabel(Val, jLabel1);
+        v1.setLabel(Val, jLabel30);
     }//GEN-LAST:event_N1MouseClicked
 
     private int numero_aleatorio(int max, int min) {
@@ -2310,7 +2324,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private jcMousePanel.jcMousePanel Ruleta;
     private jcMousePanel.jcMousePanel Tablero;
     private javax.swing.JButton jButton100;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel100;
     private javax.swing.JPanel jPanel105;
@@ -2380,6 +2394,7 @@ public class Ruleta extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JPanel jPanel98;
     private javax.swing.JPanel jPanel99;
     private jcMousePanel.jcMousePanel jcMousePanel1;
+    private javax.swing.JLabel jplata;
     private javax.swing.JLabel n0;
     private javax.swing.JLabel n26;
     private javax.swing.JLabel n3;
